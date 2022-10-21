@@ -22,9 +22,9 @@ public class PlusMinus {
             }
         }
 
-        double pRatio = positive / arr.size();
-        double nRatio = negative / arr.size();
-        double zRatio = zero / arr.size();
+        double pRatio = positive / n;
+        double nRatio = negative / n;
+        double zRatio = zero / n;
 
         System.out.println(pRatio);
         System.out.println(nRatio);

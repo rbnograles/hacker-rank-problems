@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
 
 public class MigratoryBirds {
     public static void main(String[] args) {
@@ -27,10 +26,8 @@ public class MigratoryBirds {
                birdTypes.put(t, 1);
            }
         }
-        // get keys from the hashmap
-        Set<Integer> keySet = birdTypes.keySet();
         // loop for each keys on the hashmap
-        for(int i: keySet) {
+        for(int i: birdTypes.keySet()) {
             if(birdTypes.get(i) > counter) {
                 numberType = i;
                 counter = birdTypes.get(i);
